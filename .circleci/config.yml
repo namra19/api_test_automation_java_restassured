@@ -1,0 +1,24 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:17.0
+
+    steps:
+      - checkout
+
+      - run:
+          name: Run tests
+          command: mvn clean test
+
+      - store_test_results:
+          path: target/surefire-reports
+
+      - store_artifacts:
+          path: target
+
+workflows:
+  build_and_test:
+    jobs:
+      - build
