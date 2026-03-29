@@ -14,7 +14,7 @@ This project is a Java REST-assured test automation framework designed to valida
 * Clean code following SOLID, DRY, KISS principles
 
 ## Project Structure
-
+```
 src/test/java/com/surepay/qa
 │
 ├── base       → BasePage setup
@@ -22,6 +22,7 @@ src/test/java/com/surepay/qa
 ├── services   → BaseService and entity services
 ├── utils      → Email validation helper
 └── tests      → TestNG test classes (positive and negative scenarios)
+```
 
 ## Test Workflow
 * Positive Test
@@ -39,26 +40,21 @@ src/test/java/com/surepay/qa
 
 ## Pre-requisites
 
-* Java JDK 17+ – Ensure JAVA_HOME is set.
+* Java JDK 17+ – Ensure JAVA_HOME is set - java -version
 
-- java -version
-
-* Maven 3.8+ – Required to build and run tests.
-
-- mvn -v
+* Maven 3.8+ – Required to build and run tests - mvn -v
 
 ## How to Run
 1. Clone the repository: https://github.com/namra19/api_test_automation_java_restassured.git
 2. Run tests via Maven: mvn clean test
-3. Test reports are available in - target/surefire-reports
+3. Test reports are available in - target/surefire-reports (emailable-report.html)
 
 ## Tools & Libraries
-Java 17
-Maven
-TestNG
-RestAssured
-Jackson (JSON mapping)
-CircleCI (CI/CD)
+* Java 17
+* Maven
+* TestNG
+* RestAssured
+* CircleCI (CI/CD)
 
 ## CI/CD with CircleCI
 
