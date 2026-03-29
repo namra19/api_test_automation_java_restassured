@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
+// Test class for validating comments workflow for a valid user
 public class UserCommentsTest extends BasePage {
 
     UserService userService = new UserService();

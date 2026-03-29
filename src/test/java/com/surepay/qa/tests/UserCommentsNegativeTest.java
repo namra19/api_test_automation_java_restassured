@@ -17,6 +17,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+// Test class for negative scenarios
 public class UserCommentsNegativeTest extends BasePage {
 
     // User Not Found

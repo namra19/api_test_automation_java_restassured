@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import java.util.Arrays;
 import java.util.List;
 
+// Service class to handle API calls related to Comments
 public class CommentService extends BaseService {
 
     public Response getCommentsResponseByPostId(int postId) {
