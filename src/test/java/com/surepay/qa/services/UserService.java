@@ -1,18 +1,13 @@
 package com.surepay.qa.services;
 
 import com.surepay.qa.models.User;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class UserService extends BaseService{
-
-    // public List<User> getAllUsers() {
-    //     Response response = RestAssured.get("/users");
-    //     return Arrays.asList(response.getBody().as(User[].class));
-    // }
+// Service class to handle API calls related to Users
+public class UserService extends BaseService {
 
     public User getUserByUsername(String username) {
         return getAllUsers().stream()
@@ -21,7 +16,8 @@ public class UserService extends BaseService{
                 .orElse(null);
     }
 
-     public Response getUsersResponse() {
+    // Fetch all users from API
+    public Response getUsersResponse() {
         return get("/users");
     }
 
