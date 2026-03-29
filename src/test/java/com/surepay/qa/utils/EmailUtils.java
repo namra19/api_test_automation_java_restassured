@@ -8,6 +8,6 @@ public class EmailUtils {
     private static final Pattern pattern = Pattern.compile(EMAIL_REGEX);
 
     public static boolean isValidEmail(String email) {
-        return pattern.matcher(email).matches();
+        return email != null && !email.isEmpty() && pattern.matcher(email).matches();
     }
 }
